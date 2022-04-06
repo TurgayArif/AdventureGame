@@ -41,7 +41,6 @@ public class Main {
 */
 
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
-    private static Map<String, String> vocabulary = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -70,6 +69,7 @@ public class Main {
     }
 
     public static void command() {
+        Map<String, String> vocabulary = new HashMap<>();
         Scanner sc = new Scanner(System.in);
         vocabulary.put("QUIT", "Q");
         vocabulary.put("WEST", "W");
